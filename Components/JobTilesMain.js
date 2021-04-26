@@ -39,7 +39,11 @@ export const JobTile = styled(_Tile)`
 `;
 
 export const JobTileLabel = styled(Tiles.Label)`
-  font-size: 1.125rem;
+  font-size: 1rem;
+  border-style: solid;
+  border-width: .25rem;
+  border-color: gray;
+  color: gray;
 `;
 
 export const StyledDiv = styled.div`
@@ -76,19 +80,17 @@ export const StyledTiledMain = ({ allJobs }) => (
     <Row>
       {allJobs.map((job, idx) => (
         <JobListItemWrapper sm={4} key={idx}>
-          <Tiles.Tile name='job' value="Job">
-            <div>
-            <img src={job.company_logo} width={25} height={25} />
-            </div>
+          <Tiles.Tile name='job' value="Job">   
+            <img src={job.company_logo} width={35} height={35} />
             <div>
               <div>
                 <StyledHeader>{job.created_at} <span>&#183;</span> {job.type}</StyledHeader>
                 <StyledHeader>{job.title}</StyledHeader>
                 <StyledHeader>{job.company}</StyledHeader>
+                <JobTileLabel>
+                {job.location}
+                </JobTileLabel>
               </div>
-              <JobTileLabel>
-              {job.location}
-              </JobTileLabel>
             </div>
           </Tiles.Tile>
         </JobListItemWrapper>
