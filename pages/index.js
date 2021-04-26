@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { NavBar } from '../Components'
 
 export default function Home() {
   return (
@@ -8,20 +10,18 @@ export default function Home() {
         <title>eGen - gitJobs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <NavBar />
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://egen.solutions">eGen gitJobs!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <h1 className={styles.title}>
+          Click Here  <Link href="/jobs">to see all open positions!</Link>
+        </h1>
       </main>
 
       <footer className={styles.footer}>
-          Brought to you by{' '}
+          Brought to you by Jake Armijo{' '}
           <img src="/images/logo.png" alt="Jake Logo" className={styles.logo} />
       </footer>
     </div>
