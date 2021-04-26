@@ -12,6 +12,8 @@ import { Tiles } from "@zendeskgarden/react-forms";
 const { Tile: _Tile } = Tiles;
 
 export const JobListItemWrapper = styled(Col)`
+  cursor: none;
+  padding: 10px 10px 10px 10px;
   ${(p) => mediaQuery("down", "xs", p.theme)} {
     margin-top: ${(p) => p.theme.space};
   }
@@ -36,14 +38,16 @@ export const JobTile = styled(_Tile)`
   margin-bottom: ${zdSpacingXxs};
   display: flex;
   flex-direction: column;
+  cursor: none;
 `;
 
 export const JobTileLabel = styled(Tiles.Label)`
   font-size: 1rem;
   border-style: solid;
-  border-width: .25rem;
+  border-width: .15rem;
   border-color: gray;
-  color: gray;
+  color: blue;
+  cursor: none;
 `;
 
 export const StyledDiv = styled.div`
@@ -53,17 +57,19 @@ export const StyledDiv = styled.div`
   justify-content: center;
 `;
 
-export const StyledJobNumber = styled.h4`
+export const StyledHeader = styled.h4`
   display: block;
-  float: left;
-  font-size: .45em;
+  color: grey;
+  align-content: center;
+  justify-content: center;
+  font-size: .5em;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 1em;
   font-weight: bold;
 `
-export const StyledHeader = styled.h4`
+export const StyledHeaderJobTitle = styled.h2`
   display: block;
   align-content: center;
   justify-content: center;
@@ -85,7 +91,7 @@ export const StyledTiledMain = ({ allJobs }) => (
             <div>
               <div>
                 <StyledHeader>{job.created_at} <span>&#183;</span> {job.type}</StyledHeader>
-                <StyledHeader>{job.title}</StyledHeader>
+                <StyledHeaderJobTitle>{job.title}</StyledHeaderJobTitle>
                 <StyledHeader>{job.company}</StyledHeader>
                 <JobTileLabel>
                 {job.location}
