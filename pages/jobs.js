@@ -30,7 +30,6 @@ function Jobs({ allJobs }) {
         Welcome to <a href="">All Open Jobs page!</a>
       </h1>
       <Row className='AllJobsListing'>
-      {/* <SingleJob allJobs={allJobs} /> */}
       <JobTilesMain allJobs={allJobs}/>
       </Row>
       <h1 className={styles.title}>
