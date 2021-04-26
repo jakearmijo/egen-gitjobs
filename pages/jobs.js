@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import {SingleJob, NavBar, JobTilesMain } from '../Components'
+import { NavBar, JobTilesMain, Pagination } from '../Components'
 import { Row } from '@zendeskgarden/react-grid';
+import { ensureArray } from '../lib/utils'
+
 
 
 
@@ -30,13 +32,13 @@ function Jobs({ allJobs }) {
         Welcome to <a href="">All Open Jobs page!</a>
       </h1>
       <Row className='AllJobsListing'>
-      <JobTilesMain allJobs={allJobs}/>
+      <JobTilesMain allJobs={ensureArray(allJobs)}/>
       </Row>
+    <Pagination allJobs={ensureArray(allJobs)} />
       <h1 className={styles.title}>
         Back to<Link href="/">Home Page!</Link>
       </h1>
     </main>
-
     <footer className={styles.footer}>
         Brought to you by Jake Armijo{' '}
         <img src="/images/logo.png" alt="Jake Logo" className={styles.logo} />
