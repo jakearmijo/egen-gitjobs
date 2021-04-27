@@ -34,17 +34,14 @@ export const JobListItemWrapper = styled(Col)`
     
 export const JobTile = styled(_Tile)`
   min-height: 60px;
-  padding: ${zdSpacingXs};
-  margin-bottom: ${zdSpacingXxs};
   display: flex;
   flex-direction: column;
   cursor: none;
 `;
 
 export const JobTileLabel = styled(Tiles.Label)`
-  font-size: 1rem;
   border-style: solid;
-  border-width: .15rem;
+  border-width: 1px;
   border-color: gray;
   color: blue;
   cursor: none;
@@ -62,22 +59,20 @@ export const StyledHeader = styled.h4`
   color: grey;
   align-content: center;
   justify-content: center;
-  font-size: .5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 0;
-  margin-right: 1em;
+  margin-right: 1px;
   font-weight: bold;
 `
 export const StyledHeaderJobTitle = styled.h2`
   display: block;
   align-content: center;
   justify-content: center;
-  font-size: .5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 0;
-  margin-right: 1em;
+  margin-right: 1px;
   font-weight: bold;
 `
 
