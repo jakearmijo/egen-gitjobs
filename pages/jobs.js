@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { NavBar, JobTilesMain, Pagination } from '../Components'
+import { NavBar, JobTilesMain, SearchBar } from '../Components'
 import { Row } from '@zendeskgarden/react-grid';
 import { ensureArray } from '../lib/utils'
+
 
 
 
@@ -22,19 +23,17 @@ export async function getStaticProps(){
 function Jobs({ allJobs }) {
   return (
     <div className={styles.container}>
+    {console.log("🚀 ~ file: jobs.js ~ line 26 ~ Jobs ~ styles.container ===", styles.container)}
     <Head>
       <title>gitJobs - All Open Jobs</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <NavBar />
+    <SearchBar />
     <main className={styles.main}>
-      <h1 className={styles.title}>
-        Welcome to <a href="">All Open Jobs page!</a>
-      </h1>
       <Row className='AllJobsListing'>
       <JobTilesMain allJobs={ensureArray(allJobs)}/>
       </Row>
-    <Pagination allJobs={ensureArray(allJobs)} />
       <h1 className={styles.title}>
         Back to<Link href="/">Home Page!</Link>
       </h1>

@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>eGen - gitJobs</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
       </Head>
       <NavBar />
       <main className={styles.main}>

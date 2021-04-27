@@ -3,6 +3,7 @@ import { Col } from '@zendeskgarden/react-grid';
 import { Button } from '@zendeskgarden/react-buttons';
 
 export default function SingleJob({ allJobs }) {
+  
   return (
     <Col className='SingleJob'>
       {allJobs.map((job,idx) => {
