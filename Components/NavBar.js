@@ -2,7 +2,8 @@ import Link from 'next/link';
 import styled from "styled-components";
 
 const CheckBoxWrapper = styled.div`
-  position: relative;
+position: relative;
+margin: 35px;
 `;
 const CheckBoxLabel = styled.label`
   position: absolute;
@@ -28,9 +29,9 @@ const CheckBoxLabel = styled.label`
 const CheckBox = styled.input`
   opacity: 0;
   z-index: 1;
-  border-radius: 15px;
-  width: 42px;
-  height: 26px;
+  border-radius: 20px;
+  width: 65px;
+  height: 35px;
   &:checked + ${CheckBoxLabel} {
     background: #4fbe79;
     &::after {
@@ -48,7 +49,7 @@ const CheckBox = styled.input`
 export default function Navbar(){
   return (
     <div>
-      <nav>
+      <nav className='jobNavBar'>
         <Link href='/'>
           <a>
             <span>
@@ -58,12 +59,10 @@ export default function Navbar(){
             </span>
           </a>
         </Link>
-          Dark
         <CheckBoxWrapper>
-        <CheckBox id="checkbox" type="checkbox" />
-        <CheckBoxLabel htmlFor="checkbox" />
-      </CheckBoxWrapper>
-          Light
+          <CheckBox className='toggleDarkMode' id="checkbox" type="checkbox" />
+          <CheckBoxLabel htmlFor="checkbox" />
+        </CheckBoxWrapper>
       </nav>
     </div>
   );
