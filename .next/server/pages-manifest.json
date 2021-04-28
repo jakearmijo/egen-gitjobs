@@ -5,4 +5,5 @@
   "/": "pages/index.js",
   "/jobs/[id]": "pages/jobs/[id].js",
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/jobs": "pages/jobs.js"
 }
