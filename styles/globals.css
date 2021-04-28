@@ -145,3 +145,51 @@ input:checked + .slider:before {
     border: 1px solid #ccc;  
   }
 }
+
+.howtoapply{
+  background-image: url('/images/applybackground.png');
+  color: white;
+  align-content: center;
+}
+
+.jobView{
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em
+}
+
+.jobNavBar{
+  display: flex;
+  flex-direction: row;
+  align-content:inherit;
+  justify-content: space-between;
+  background-image: url('/images/applybackground.png');
+  width: 100%;
+}
+.jobNavBar > a > span > h3{
+  flex-direction: row;
+  color: white;
+  font-family: monospaced, sans-serif;
+  padding: 15px 15px;
+  margin: 25px 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toggleDarkMode{
+  float: right;
+  flex-direction: row-reverse;
+  padding: 15px 15px;
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.titleLocApplyBottom{
+  display: flex;
+  flex-direction: row;
+}

@@ -3,6 +3,7 @@ import SingleJob from './SingleJob'
 import JobTilesMain from './JobTilesMain'
 import Pagination from './Pagination'
 import SearchBar from './SearchBar'
+import ButtonTemplate from './ButtonTemplate'
 
 
 export {
@@ -11,4 +12,5 @@ export {
   JobTilesMain,
   Pagination,
   SearchBar,
+  ButtonTemplate,
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from 'next/link'
 
 import {
   zdSpacingXs,
@@ -12,31 +13,31 @@ import { Tiles } from "@zendeskgarden/react-forms";
 const { Tile: _Tile } = Tiles;
 
 export const JobListItemWrapper = styled(Col)`
-  cursor: none;
+  cursor: default;
   padding: 10px 10px 10px 10px;
   ${(p) => mediaQuery("down", "xs", p.theme)} {
     margin-top: ${(p) => p.theme.space};
   }
   border-radius: ${zdSpacingXxs};
   &:nth-of-type(odd) {
-    padding-right: 2px;
+    padding-right: 4px;
   }
   &:nth-of-type(even) {
-    padding-left: 2px;
+    padding-left: 4px;
   }
   &:nth-of-type(even) {
-    padding-top: 2px;
+    padding-top: 4px;
   }
   &:nth-of-type(even) {
-    padding-bottom: 2px;
+    padding-bottom: 4px;
   }
   `;
     
 export const JobTile = styled(_Tile)`
-  min-height: 60px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
-  cursor: none;
+  cursor: default;
 `;
 
 export const JobTileLabel = styled(Tiles.Label)`
@@ -44,14 +45,14 @@ export const JobTileLabel = styled(Tiles.Label)`
   border-width: 1px;
   border-color: gray;
   color: blue;
-  cursor: none;
+  cursor: default;
 `;
 
 export const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+  cursor: default;
 `;
 
 export const StyledHeader = styled.h4`
@@ -64,6 +65,7 @@ export const StyledHeader = styled.h4`
   margin-left: 0;
   margin-right: 1px;
   font-weight: bold;
+  cursor: default;
 `
 export const StyledHeaderJobTitle = styled.h2`
   display: block;
@@ -81,7 +83,8 @@ export const StyledTiledMain = ({ allJobs }) => (
     <Row>
       {allJobs.map((job, idx) => (
         <JobListItemWrapper sm={4} key={idx}>
-          <Tiles.Tile name='job' value="Job">   
+          <Link href={`/jobs/${job.id}`}>
+          <JobTile name='job' value="Job">   
             <img src={job.company_logo} width={35} height={35} />
             <div>
               <div>
@@ -93,7 +96,8 @@ export const StyledTiledMain = ({ allJobs }) => (
                 </JobTileLabel>
               </div>
             </div>
-          </Tiles.Tile>
+          </JobTile>
+          </Link>
         </JobListItemWrapper>
       ))}
     </Row>

@@ -1,9 +1,10 @@
-import React from 'react'
+import { ButtonTemplate } from '../Components'
 
-export default function SearchBar({ handleSearch, handleSearchLocation, handleSearchFullTime }) {
+export default function SearchBar({ handleSearch, handleSearchLocation, handleSearchFullTime,}) {
+  const search = 'Search'
 
   return (
-    <div>
+    <div className='searchBar'>
       <div className="topnav">
         <div className="search-container">
           <form action="positions.json?">
@@ -26,6 +27,7 @@ export default function SearchBar({ handleSearch, handleSearchLocation, handleSe
         </label>
         </div>
       </div>
+      <ButtonTemplate name={search}/>
     </div>
   )
 }
