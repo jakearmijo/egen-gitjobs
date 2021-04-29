@@ -5,21 +5,9 @@ import { useState } from 'react'
 import { NavBar, JobTilesMain, SearchBar } from '../Components'
 import { Row } from '@zendeskgarden/react-grid';
 import { ensureArray } from '../lib/utils'
+import { lightTheme, darkTheme } from '../Components/Themes'
 
 
-// export async function getStaticPaths(){
-//   const res = await fetch("https://jobs.github.com/positions.json")
-//   const allJobs = await res.json()
-  
-//   const paths = allJobs.results.map((job) => {
-//     return `/positions/${job.id}`
-//   })
-  
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
 
 export async function getStaticProps(){
   const res = await fetch("https://jobs.github.com/positions.json")
@@ -34,6 +22,17 @@ export async function getStaticProps(){
 
 export default function Home({ allJobs }) {
   const [filteredData,setFilteredData] = useState(allJobs);
+
+  const [theme, setTheme] = useState('light');
+  const themeToggler = () => {
+    console.log('excuse us as we work on changing themes')
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+  const toggleDarkandLightMode = () => {
+    console.log("🚀 ~ file: index.js ~ line 27 ~ Home ~ theme", theme)
+    return theme === 'light' ? '.jobViewLight' : '.jobViewDark'
+  }
+  console.log("🚀🚀🚀~ file: index.js ~ line 35 ~ toggleDarkandLightMode ~ This would switch the class", toggleDarkandLightMode())
 
   const handleSearch = (event) => {
     event.preventDefault()
@@ -71,14 +70,14 @@ export default function Home({ allJobs }) {
   }
 
   return (
-    <div className='jobView'>
+    <div className={toggleDarkandLightMode()}>
       <Head>
         <title>eGen - gitJobs</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
-      <NavBar />
+      <NavBar themeToggler={themeToggler}/>
       <SearchBar handleSearch={handleSearch} handleSearchLocation={handleSearchLocation} handleSearchFullTime={handleSearchFullTime}/>
       <main className={styles.main}>
       <Row className='AllJobsListing'>
