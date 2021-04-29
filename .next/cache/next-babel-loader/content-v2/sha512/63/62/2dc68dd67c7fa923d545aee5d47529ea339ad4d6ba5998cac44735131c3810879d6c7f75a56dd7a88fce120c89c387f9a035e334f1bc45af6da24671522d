@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var lightTheme = {\n  body: '#F5F6F8',\n  text: '#FFFFFF',\n  toggleBorder: '#FFFFFF',\n  background: '#F5F6F8'\n};\nexport var darkTheme = {\n  body: '#131822',\n  text: '#19212D',\n  toggleBorder: '#19212D',\n  background: '#131822'\n};","map":null,"metadata":{},"sourceType":"module"}
