@@ -15,7 +15,7 @@ export default function SingleJob({ allJobs }) {
       {allJobs.map((job,idx) => {
         return (
               <Button onClick={handleClick} textAlign="center" key={`${job.created_at}-${job.title}-${job.company}-${idx}`}>
-                <img src={job.company_logo} width={25} height={25} />
+                <img src={job.company_logo} width={50} height={50} />
                 <h5>{job.created_at} <span>&#183;</span> {job.type}</h5>
                 <h3>{job.title}</h3>
                 <h5>{job.company}</h5>

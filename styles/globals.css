@@ -103,9 +103,7 @@ input:checked + .slider:before {
   color: white;
 }
 
-.topnav .search-container {
-  float: right;
-}
+
 
 .topnav input[type=text] {
   padding: 6px;
@@ -152,12 +150,35 @@ input:checked + .slider:before {
   align-content: center;
 }
 
+.jobViewLight{
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
+  background-color: #F5F6F8;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 .jobView{
   align-content: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 60em
+  width: 60em;
+  background-color: #F5F6F8;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.jobViewDark{
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
+  background-color: #131822;
+  color: #19212D;
+  border-color: #19212D;
 }
 
 .jobNavBar{
@@ -177,19 +198,14 @@ input:checked + .slider:before {
   margin-left: auto;
   margin-right: auto;
 }
-.toggleDarkMode{
-  float: right;
-  flex-direction: row-reverse;
-  padding: 15px 15px;
-}
 
 .searchBar{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: center;
 }
 .titleLocApplyBottom{
   display: flex;
   flex-direction: row;
 }
+
