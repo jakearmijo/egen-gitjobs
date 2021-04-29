@@ -2,10 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from 'next/link'
 
-import {
-  zdSpacingXs,
-  zdSpacingXxs,
-} from "@zendeskgarden/css-variables";
+import { zdSpacingXxs } from "@zendeskgarden/css-variables";
 import { mediaQuery } from "@zendeskgarden/react-theming";
 import { Row, Col } from "@zendeskgarden/react-grid";
 import { Tiles } from "@zendeskgarden/react-forms";
@@ -33,6 +30,12 @@ export const JobListItemWrapper = styled(Col)`
   }
   `;
     
+export const JobTileMain = styled(_Tile)`
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+`;
 export const JobTile = styled(_Tile)`
   min-height: 100px;
   display: flex;
@@ -41,9 +44,6 @@ export const JobTile = styled(_Tile)`
 `;
 
 export const JobTileLabel = styled(Tiles.Label)`
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
   color: blue;
   cursor: default;
 `;
@@ -64,7 +64,6 @@ export const StyledHeader = styled.h4`
   margin-bottom: 1px;
   margin-left: 0;
   margin-right: 1px;
-  font-weight: bold;
   cursor: default;
 `
 export const StyledHeaderJobTitle = styled.h2`
@@ -79,29 +78,39 @@ export const StyledHeaderJobTitle = styled.h2`
 `
 
 export const StyledTiledMain = ({ allJobs }) => (
-  <JobTile name="Job">
+  <JobTileMain name="Job">
     <Row>
-      {allJobs.map((job, idx) => (
+      {allJobs.map((job, idx) => {
+        const { 
+          id,
+          company_logo, 
+          company,
+          created_at, 
+          type, 
+          title, 
+          location,
+        } = job
+        return (
         <JobListItemWrapper sm={4} key={idx}>
-          <Link href={`/jobs/${job.id}`}>
+          <Link href={`/jobs/${id}`}>
           <JobTile name='job' value="Job">   
-            <img src={job.company_logo} width={35} height={35} />
+            <img src={company_logo} width={35} height={35} />
             <div>
               <div>
-                <StyledHeader>{job.created_at} <span>&#183;</span> {job.type}</StyledHeader>
-                <StyledHeaderJobTitle>{job.title}</StyledHeaderJobTitle>
-                <StyledHeader>{job.company}</StyledHeader>
+                <StyledHeader>{created_at} <span>&#183;</span> {type}</StyledHeader>
+                <StyledHeaderJobTitle>{title}</StyledHeaderJobTitle>
+                <StyledHeader>{company}</StyledHeader>
                 <JobTileLabel>
-                {job.location}
+                {location}
                 </JobTileLabel>
               </div>
             </div>
           </JobTile>
           </Link>
         </JobListItemWrapper>
-      ))}
+      )})}
     </Row>
-  </JobTile>
+  </JobTileMain>
 );
 
 export default StyledTiledMain;

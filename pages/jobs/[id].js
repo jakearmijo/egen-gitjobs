@@ -1,19 +1,80 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
+import styled from "styled-components";
+import renderHTML from 'react-render-html';
+import { Col } from "@zendeskgarden/react-grid";
+import { mediaQuery } from "@zendeskgarden/react-theming";
+import { zdSpacingXxs } from "@zendeskgarden/css-variables";
 import { NavBar, ButtonTemplate } from '../../Components'
 import { ensureArray } from '../../lib/utils'
+import { Tiles } from "@zendeskgarden/react-forms";
 
-import renderHTML from 'react-render-html';
+const { Tile: _Tile } = Tiles;
 
-import { 
-  JobListItemWrapper, 
-  JobTile, 
-  StyledHeader, 
-  StyledHeaderJobTitle,
-  JobTileLabel
- } from '../../Components/JobTilesMain'
+
+ export const SingleJobItemWrapper = styled(Col)`
+  cursor: default;
+  padding: 10px 10px 10px 10px;
+  ${(p) => mediaQuery("down", "xs", p.theme)} {
+    margin-top: ${(p) => p.theme.space};
+  }
+  border-radius: ${zdSpacingXxs};
+  &:nth-of-type(odd) {
+    padding-right: 4px;
+  }
+  &:nth-of-type(even) {
+    padding-left: 4px;
+  }
+  &:nth-of-type(even) {
+    padding-top: 4px;
+  }
+  &:nth-of-type(even) {
+    padding-bottom: 4px;
+  }
+  `;
+    
+export const SingleJobTile = styled(_Tile)`
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+`;
+
+export const SingleJobTileLabel = styled(Tiles.Label)`
+  color: blue;
+  cursor: default;
+`;
+
+export const StyledSingleJobDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  cursor: default;
+`;
+
+export const StyledHeaderSingle = styled.h4`
+  display: block;
+  color: grey;
+  align-content: center;
+  justify-content: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 0;
+  margin-right: 1px;
+  font-weight: bold;
+  cursor: default;
+`
+export const StyledHeaderSingleJobTitle = styled.h2`
+  display: block;
+  align-content: center;
+  justify-content: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 0;
+  margin-right: 1px;
+  font-weight: bold;
+`
 
 
 export async function getStaticPaths(){
@@ -66,22 +127,24 @@ function Job({ job }) {
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
       <NavBar />
-    <JobListItemWrapper>
-      <JobTile>
-        <img src={company_logo} width={100} height={100} />
-        <h1>{company}</h1>
-        <h4>{company_url}</h4>
+    <SingleJobItemWrapper>
+      <SingleJobTile>
+        <img src={company_logo} width={200} height={100} />
+        <div>
+        <StyledHeaderSingleJobTitle>{company}</StyledHeaderSingleJobTitle>
+        <StyledHeaderSingle>{company_url}</StyledHeaderSingle>
         <Link href={company_url}>
         <a target='_blank' href={company_url}>
         <ButtonTemplate name={companysite}/>
         </a>
         </Link>
-      </JobTile>
-      <JobTile>
+        </div>
+      </SingleJobTile>
+      <SingleJobTile>
       <div>
-        <StyledHeader>{created_at}<span>&#183;</span>{type}</StyledHeader>
-        <StyledHeaderJobTitle>{title}</StyledHeaderJobTitle>
-        <JobTileLabel>{location}</JobTileLabel>
+        <StyledHeaderSingle>{created_at}<span>&#183;</span>{type}</StyledHeaderSingle>
+        <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
+        <SingleJobTileLabel>{location}</SingleJobTileLabel>
         <a target='_blank' href={company_url}>
           <ButtonTemplate name={applynow}/>
         </a>
@@ -90,18 +153,18 @@ function Job({ job }) {
           {renderHTML(description)}
       </div>
       <div className='howtoapply'>
-      <StyledHeaderJobTitle>How to Apply?</StyledHeaderJobTitle>
+      <StyledHeaderSingleJobTitle>How to Apply?</StyledHeaderSingleJobTitle>
         {renderHTML(how_to_apply)}
       </div>
       <div className='titleLocApplyBottom'>
-        <StyledHeaderJobTitle>{title}</StyledHeaderJobTitle>
-        <JobTileLabel>{location}</JobTileLabel>
+        <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
+        <SingleJobTileLabel>{location}</SingleJobTileLabel>
         <a target='_blank' href={company_url}>
           <ButtonTemplate name={applynow}/>
         </a>
       </div>
-      </JobTile>
-    </JobListItemWrapper>
+      </SingleJobTile>
+    </SingleJobItemWrapper>
     <footer className={styles.footer}>
       Brought to you by Jake Armijo{' '}
       <img src="/images/logo.png" alt="Jake Logo" className={styles.logo} />

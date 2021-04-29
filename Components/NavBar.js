@@ -32,6 +32,9 @@ const CheckBox = styled.input`
   border-radius: 20px;
   width: 65px;
   height: 35px;
+  float: right;
+  flex-direction: row-reverse;
+  padding: 15px 15px;
   &:checked + ${CheckBoxLabel} {
     background: #4fbe79;
     &::after {
@@ -46,7 +49,7 @@ const CheckBox = styled.input`
   }
 `;
 
-export default function Navbar(){
+export default function Navbar({ themeToggler }){
   return (
     <div>
       <nav className='jobNavBar'>
@@ -60,7 +63,7 @@ export default function Navbar(){
           </a>
         </Link>
         <CheckBoxWrapper>
-          <CheckBox className='toggleDarkMode' id="checkbox" type="checkbox" />
+          <CheckBox onClick={themeToggler} id="checkbox" type="checkbox" />
           <CheckBoxLabel htmlFor="checkbox" />
         </CheckBoxWrapper>
       </nav>
