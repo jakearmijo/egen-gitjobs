@@ -83,9 +83,6 @@ export default function Home({ allJobs }) {
       <Row className='AllJobsListing'>
       <JobTilesMain allJobs={ensureArray(filteredData)}/>
       </Row>
-      <h1 className={styles.title}>
-        Back to <Link href="/">Home Page!</Link>
-      </h1>
       </main>
       <footer className={styles.footer}>
           Brought to you by Jake Armijo{' '}

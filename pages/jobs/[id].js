@@ -164,6 +164,9 @@ function Job({ job }) {
         </a>
       </div>
       </SingleJobTile>
+      <h1 className={styles.title}>
+        Back to <Link href="/">Home Page!</Link>
+      </h1>
     </SingleJobItemWrapper>
     <footer className={styles.footer}>
       Brought to you by Jake Armijo{' '}
