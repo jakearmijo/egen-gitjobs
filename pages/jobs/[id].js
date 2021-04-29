@@ -123,7 +123,6 @@ function Job({ job }) {
       <Head>
         <title>{company} - {title}</title>
         <link rel="icon" href={company_logo} />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
       <NavBar />
