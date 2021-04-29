@@ -131,9 +131,9 @@ function Job({ job }) {
         <img src={company_logo} width={200} height={100} />
         <div>
         <StyledHeaderSingleJobTitle>{company}</StyledHeaderSingleJobTitle>
-        <StyledHeaderSingle>{company_url}</StyledHeaderSingle>
-        <Link href={company_url}>
-        <a target='_blank' href={company_url}>
+        <StyledHeaderSingle>{ensureString(company_url)}</StyledHeaderSingle>
+        <Link href={ensureString(company_url)}>
+        <a target='_blank' href={ensureString(company_url)}>
         <ButtonTemplate name={companysite}/>
         </a>
         </Link>
@@ -144,7 +144,7 @@ function Job({ job }) {
         <StyledHeaderSingle>{created_at}<span>&#183;</span>{type}</StyledHeaderSingle>
         <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
         <SingleJobTileLabel>{location}</SingleJobTileLabel>
-        <a target='_blank' href={company_url}>
+        <a target='_blank' href={ensureString(company_url)}>
           <ButtonTemplate name={applynow}/>
         </a>
       </div>
@@ -158,7 +158,7 @@ function Job({ job }) {
       <div className='titleLocApplyBottom'>
         <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
         <SingleJobTileLabel>{location}</SingleJobTileLabel>
-        <a target='_blank' href={company_url}>
+        <a target='_blank' href={ensureString(company_url)}>
           <ButtonTemplate name={applynow}/>
         </a>
       </div>
