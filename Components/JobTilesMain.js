@@ -35,7 +35,6 @@ export const JobTileMain = styled(_Tile)`
   display: flex;
   flex-direction: column;
   cursor: default;
-  background-color: lightgrey;
 `;
 export const JobTile = styled(_Tile)`
   min-height: 100px;
@@ -65,7 +64,6 @@ export const StyledHeader = styled.h4`
   margin-bottom: 1px;
   margin-left: 0;
   margin-right: 1px;
-  font-weight: bold;
   cursor: default;
 `
 export const StyledHeaderJobTitle = styled.h2`

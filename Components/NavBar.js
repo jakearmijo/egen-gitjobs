@@ -49,7 +49,7 @@ const CheckBox = styled.input`
   }
 `;
 
-export default function Navbar(){
+export default function Navbar({ themeToggler }){
   return (
     <div>
       <nav className='jobNavBar'>
@@ -63,7 +63,7 @@ export default function Navbar(){
           </a>
         </Link>
         <CheckBoxWrapper>
-          <CheckBox id="checkbox" type="checkbox" />
+          <CheckBox onClick={themeToggler} id="checkbox" type="checkbox" />
           <CheckBoxLabel htmlFor="checkbox" />
         </CheckBoxWrapper>
       </nav>
