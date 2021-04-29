@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a>
-    <img src="/images/logo.png" alt="Jake Logo" width="80" height="80">
+  <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="80" height="80">
   </a>
 
   <h3 align="center">eGen gitJobs</h3>
