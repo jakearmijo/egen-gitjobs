@@ -2,11 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
-  "/jobs/[id]": "pages/jobs/[id].js",
-  "/": "pages/index.js"
-=======
   "/": "pages/index.js",
   "/jobs/[id]": "pages/jobs/[id].js"
->>>>>>> b25b0b76978b646b933c940ff3b4be8bd18c93b9
 }
