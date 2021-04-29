@@ -81,8 +81,9 @@ netlify.com Starter (free) account.
 ### Built With
 
 * [Nextjs](https://nextjs.org/)
+* [NetLify](https://nextjs.org/)
 * [Styled-Component](https://styled-components.com/)
-* []()
+* [MomentJs]()
 
 
 
@@ -155,14 +156,15 @@ Jake Armijo - [@jakemij](https://instagram.com/jakemij) - armijojake@yahoo.com
 
 Project Link: [https://github.com/jakearmijo/egen-gitjobs](https://github.com/jakearmijo/egen-gitjobs)
 
-Website Link:  [Jake Armijo](https://jakearmijo.com) 
+Portfolio Link:  [https://jakearmijo.com](https://jakearmijo.com) 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
+* [eGen Solutions](http://egen.solutions)
 * [Beth Graham](http://egen.solutions)
 * [Alex Armijo](https://rsmus.com/)
-* [Charlotte Armijo]()
+
 
 
 
