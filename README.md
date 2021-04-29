@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
-    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="80" height="80">
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="200" height="100">
   </a>
 
   <h3 align="center">eGen gitJobs</h3>
