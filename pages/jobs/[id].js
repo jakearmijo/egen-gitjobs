@@ -7,8 +7,9 @@ import { Col } from "@zendeskgarden/react-grid";
 import { mediaQuery } from "@zendeskgarden/react-theming";
 import { zdSpacingXxs } from "@zendeskgarden/css-variables";
 import { NavBar, ButtonTemplate } from '../../Components'
-import { ensureArray } from '../../lib/utils'
+import { ensureArray, ensureString } from '../../lib/utils'
 import { Tiles } from "@zendeskgarden/react-forms";
+import moment from 'moment';
 
 const { Tile: _Tile } = Tiles;
 
@@ -123,7 +124,6 @@ function Job({ job }) {
       <Head>
         <title>{company} - {title}</title>
         <link rel="icon" href={company_logo} />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
       <NavBar />
@@ -132,9 +132,9 @@ function Job({ job }) {
         <img src={company_logo} width={200} height={100} />
         <div>
         <StyledHeaderSingleJobTitle>{company}</StyledHeaderSingleJobTitle>
-        <StyledHeaderSingle>{company_url}</StyledHeaderSingle>
-        <Link href={company_url}>
-        <a target='_blank' href={company_url}>
+        <StyledHeaderSingle>{ensureString(company_url)}</StyledHeaderSingle>
+        <Link href={ensureString(company_url)}>
+        <a target='_blank' href={ensureString(company_url)}>
         <ButtonTemplate name={companysite}/>
         </a>
         </Link>
@@ -145,7 +145,7 @@ function Job({ job }) {
         <StyledHeaderSingle>{created_at}<span>&#183;</span>{type}</StyledHeaderSingle>
         <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
         <SingleJobTileLabel>{location}</SingleJobTileLabel>
-        <a target='_blank' href={company_url}>
+        <a target='_blank' href={ensureString(company_url)}>
           <ButtonTemplate name={applynow}/>
         </a>
       </div>
@@ -159,11 +159,14 @@ function Job({ job }) {
       <div className='titleLocApplyBottom'>
         <StyledHeaderSingleJobTitle>{title}</StyledHeaderSingleJobTitle>
         <SingleJobTileLabel>{location}</SingleJobTileLabel>
-        <a target='_blank' href={company_url}>
+        <a target='_blank' href={ensureString(company_url)}>
           <ButtonTemplate name={applynow}/>
         </a>
       </div>
       </SingleJobTile>
+      <h1 className={styles.title}>
+        Back to <Link href="/">Home Page!</Link>
+      </h1>
     </SingleJobItemWrapper>
     <footer className={styles.footer}>
       Brought to you by Jake Armijo{' '}

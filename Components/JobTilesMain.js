@@ -6,6 +6,7 @@ import { zdSpacingXxs } from "@zendeskgarden/css-variables";
 import { mediaQuery } from "@zendeskgarden/react-theming";
 import { Row, Col } from "@zendeskgarden/react-grid";
 import { Tiles } from "@zendeskgarden/react-forms";
+import moment from 'moment';
 
 const { Tile: _Tile } = Tiles;
 
@@ -35,6 +36,11 @@ export const JobTileMain = styled(_Tile)`
   display: flex;
   flex-direction: column;
   cursor: default;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
 `;
 export const JobTile = styled(_Tile)`
   min-height: 100px;
@@ -65,8 +71,9 @@ export const StyledHeader = styled.h4`
   margin-left: 0;
   margin-right: 1px;
   cursor: default;
+  font-weight: lighter;
 `
-export const StyledHeaderJobTitle = styled.h2`
+export const StyledHeaderJobTitle = styled.h3`
   display: block;
   align-content: center;
   justify-content: center;
@@ -90,6 +97,12 @@ export const StyledTiledMain = ({ allJobs }) => (
           title, 
           location,
         } = job
+
+          const reworkCreated_At = moment(created_at).format('llll');
+          const reworkTheNewDate = moment().format('llll');
+          const theMathAttemp = moment(reworkTheNewDate).diff(moment(reworkCreated_At))
+          const humanize = moment.duration(theMathAttemp).humanize()
+          
         return (
         <JobListItemWrapper sm={4} key={idx}>
           <Link href={`/jobs/${id}`}>
@@ -97,7 +110,7 @@ export const StyledTiledMain = ({ allJobs }) => (
             <img src={company_logo} width={35} height={35} />
             <div>
               <div>
-                <StyledHeader>{created_at} <span>&#183;</span> {type}</StyledHeader>
+                <StyledHeader>{humanize} ago <span>&#183;</span> {type}</StyledHeader>
                 <StyledHeaderJobTitle>{title}</StyledHeaderJobTitle>
                 <StyledHeader>{company}</StyledHeader>
                 <JobTileLabel>
