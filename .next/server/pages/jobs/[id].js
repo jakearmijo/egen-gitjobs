@@ -1130,12 +1130,12 @@ function Job({
           children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(StyledHeaderSingleJobTitle, {
             children: company
           }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(StyledHeaderSingle, {
-            children: company_url
+            children: Object(_lib_utils__WEBPACK_IMPORTED_MODULE_10__[/* ensureString */ "b"])(company_url)
           }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-            href: company_url,
+            href: Object(_lib_utils__WEBPACK_IMPORTED_MODULE_10__[/* ensureString */ "b"])(company_url),
             children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
               target: "_blank",
-              href: company_url,
+              href: Object(_lib_utils__WEBPACK_IMPORTED_MODULE_10__[/* ensureString */ "b"])(company_url),
               children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_Components__WEBPACK_IMPORTED_MODULE_9__[/* ButtonTemplate */ "a"], {
                 name: companysite
               })
@@ -1154,7 +1154,7 @@ function Job({
             children: location
           }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
             target: "_blank",
-            href: company_url,
+            href: Object(_lib_utils__WEBPACK_IMPORTED_MODULE_10__[/* ensureString */ "b"])(company_url),
             children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_Components__WEBPACK_IMPORTED_MODULE_9__[/* ButtonTemplate */ "a"], {
               name: applynow
             })
@@ -1174,7 +1174,7 @@ function Job({
             children: location
           }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
             target: "_blank",
-            href: company_url,
+            href: Object(_lib_utils__WEBPACK_IMPORTED_MODULE_10__[/* ensureString */ "b"])(company_url),
             children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_Components__WEBPACK_IMPORTED_MODULE_9__[/* ButtonTemplate */ "a"], {
               name: applynow
             })
@@ -1920,7 +1920,7 @@ function mitt() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export ensureString */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ensureString; });
 /* unused harmony export ensureNumeric */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ensureArray; });
 /* unused harmony export ensureObject */

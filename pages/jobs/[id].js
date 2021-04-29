@@ -7,7 +7,7 @@ import { Col } from "@zendeskgarden/react-grid";
 import { mediaQuery } from "@zendeskgarden/react-theming";
 import { zdSpacingXxs } from "@zendeskgarden/css-variables";
 import { NavBar, ButtonTemplate } from '../../Components'
-import { ensureArray } from '../../lib/utils'
+import { ensureArray, ensureString } from '../../lib/utils'
 import { Tiles } from "@zendeskgarden/react-forms";
 
 const { Tile: _Tile } = Tiles;
