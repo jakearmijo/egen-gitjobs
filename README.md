@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/jakearmijo/egen-gitjobs">
-    <img src="/images/logo.png" alt="Jake Logo" width="80" height="80">
+  <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="200" height="100">
   </a>
 
   <h3 align="center">eGen gitJobs</h3>
@@ -81,8 +81,9 @@ netlify.com Starter (free) account.
 ### Built With
 
 * [Nextjs](https://nextjs.org/)
+* [NetLify](https://nextjs.org/)
 * [Styled-Component](https://styled-components.com/)
-* []()
+* [MomentJs]()
 
 
 
@@ -155,14 +156,15 @@ Jake Armijo - [@jakemij](https://instagram.com/jakemij) - armijojake@yahoo.com
 
 Project Link: [https://github.com/jakearmijo/egen-gitjobs](https://github.com/jakearmijo/egen-gitjobs)
 
-Website Link:  [Jake Armijo](https://jakearmijo.com) 
+Portfolio Link:  [https://jakearmijo.com](https://jakearmijo.com) 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
+* [eGen Solutions](http://egen.solutions)
 * [Beth Graham](http://egen.solutions)
 * [Alex Armijo](https://rsmus.com/)
-* [Charlotte Armijo]()
+
 
 
 
