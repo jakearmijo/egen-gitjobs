@@ -36,6 +36,11 @@ export const JobTileMain = styled(_Tile)`
   display: flex;
   flex-direction: column;
   cursor: default;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
 `;
 export const JobTile = styled(_Tile)`
   min-height: 100px;
