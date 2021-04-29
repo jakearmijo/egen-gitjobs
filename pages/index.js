@@ -37,10 +37,10 @@ export default function Home({ allJobs }) {
 
   const handleSearch = (event) => {
     event.preventDefault()
-    let value = event.target.value;
+    let value = event.target.value.toLowerCase();
     let result = [];
     result = allJobs.filter((data) => {
-      return data.title.search(value) != -1 || data.company.search(value) != -1;
+      return data.title.toLowerCase().search(value) != -1 || data.company.toLowerCase().search(value) != -1;
     });
     setFilteredData(result);
     value = ''
@@ -48,10 +48,10 @@ export default function Home({ allJobs }) {
 
   const handleSearchLocation = (event) => {
     event.preventDefault()
-    let value = event.target.value;
+    let value = event.target.value.toLowerCase();
     let result = [];
     result = allJobs.filter((data) => {
-      return data.location.search(value) != -1;
+      return data.location.toLowerCase().search(value) != -1;
     });
     setFilteredData(result);
   }
