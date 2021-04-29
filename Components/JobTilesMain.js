@@ -66,6 +66,7 @@ export const StyledHeader = styled.h4`
   margin-left: 0;
   margin-right: 1px;
   cursor: default;
+  font-weight: lighter;
 `
 export const StyledHeaderJobTitle = styled.h3`
   display: block;
@@ -91,13 +92,11 @@ export const StyledTiledMain = ({ allJobs }) => (
           title, 
           location,
         } = job
-          console.log("🚀 ~ file: JobTilesMain.js ~ line 94 ~ {allJobs.map ~ created_at", created_at)
 
           const reworkCreated_At = moment(created_at).format('llll');
           const reworkTheNewDate = moment().format('llll');
           const theMathAttemp = moment(reworkTheNewDate).diff(moment(reworkCreated_At))
           const humanize = moment.duration(theMathAttemp).humanize()
-          console.log("🚀 ~ file: JobTilesMain.js ~ line 104 ~ {allJobs.map ~ humanize", humanize)
           
         return (
         <JobListItemWrapper sm={4} key={idx}>
