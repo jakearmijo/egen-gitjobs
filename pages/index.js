@@ -25,14 +25,14 @@ export default function Home({ allJobs }) {
 
   const [theme, setTheme] = useState('light');
   const themeToggler = () => {
-    console.log('excuse us as we work on changing themes')
+    console.log('plz excuse us as we implement changing themes')
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }
   const toggleDarkandLightMode = () => {
-    console.log("🚀 ~ file: index.js ~ line 27 ~ Home ~ theme", theme)
+    console.log("🚀 ~ file: index.js ~ line 27 ~ current theme is ->", theme)
     return theme === 'light' ? '.jobViewLight' : '.jobViewDark'
   }
-  console.log("🚀🚀🚀~ file: index.js ~ line 35 ~ toggleDarkandLightMode ~ This would switch the class", toggleDarkandLightMode())
+  console.log("🚀🚀🚀~ file: index.js ~ line 35 ~ toggleDarkandLightMode ~ This would switch the CSS class to:", toggleDarkandLightMode())
 
   const handleSearch = (event) => {
     event.preventDefault()
