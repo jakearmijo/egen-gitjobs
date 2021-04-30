@@ -141,7 +141,7 @@ This project could be used by anyone searching for a new job using the GitHub Jo
 _For more examples, please refer to the [GitHub Jobs](https://jobs.github.com/)_
 
 <!-- ROADMAP -->
-## Roadmap / Things id work on and imporve
+## Roadmap / Things I'd work on / imporve
 
 See the [open issues](https://github.com/jakearmijo/egen-gitjobs/issues) for a list of proposed features (and known issues).
 
