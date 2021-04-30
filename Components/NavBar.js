@@ -51,7 +51,6 @@ const CheckBox = styled.input`
 
 export default function Navbar({ themeToggler }){
   return (
-    <div>
       <nav className='jobNavBar'>
         <Link href='/'>
           <a>
@@ -69,6 +68,5 @@ export default function Navbar({ themeToggler }){
         </CheckBoxWrapper>
         </div>
       </nav>
-    </div>
   );
 };

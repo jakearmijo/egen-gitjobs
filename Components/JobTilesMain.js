@@ -40,7 +40,7 @@ export const JobTileMain = styled(_Tile)`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 60em;
+  width: 75%;
 `;
 export const JobTile = styled(_Tile)`
   min-height: 100px;
@@ -72,7 +72,7 @@ export const StyledHeader = styled.h4`
   margin-right: 1px;
   cursor: default;
   font-weight: lighter;
-`
+`;
 export const StyledHeaderJobTitle = styled.h3`
   display: block;
   align-content: center;
@@ -82,7 +82,7 @@ export const StyledHeaderJobTitle = styled.h3`
   margin-left: 0;
   margin-right: 1px;
   font-weight: bold;
-`
+`;
 
 export const StyledTiledMain = ({ allJobs }) => (
   <JobTileMain name="Job">
