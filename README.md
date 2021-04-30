@@ -53,8 +53,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![egen - gitJobs][all-jobs-screenshot]](https://www.egen.solutions/)
-[![egen - gitJobs][single-job-screenshot]](https://www.egen.solutions/)
+[![egen - gitJobs][all-jobs-screenshot]](https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/all-jobs-view-screenshot.png?raw=true)
+[![egen - gitJobs][single-job-screenshot]](https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/single-page-view-screenshot.png?raw=true)
 
 Let’s say you are part of a team that is working on developing a Job Board for the us. The idea is to utilize GitHub Jobs API (https://jobs.github.com/api) for the data needs and develop a clean responsive user interface with features:
 1. View all the jobs that are currently live via the GitHub Jobs API.
