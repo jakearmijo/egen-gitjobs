@@ -122,7 +122,7 @@ context('Basic Website Funcationality', () => {
     
   })
 
-  it.only('Should Toggle Light and Dark Mode', () => {
+  it('Should Toggle Light and Dark Mode', () => {
     cy.wait(2000)
 
     cy.get('.toggleLightDarkTester')

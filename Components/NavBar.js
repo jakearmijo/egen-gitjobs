@@ -62,10 +62,12 @@ export default function Navbar({ themeToggler }){
             </span>
           </a>
         </Link>
+        <div className='toggleLightDarkTester'>
         <CheckBoxWrapper>
-          <CheckBox className='toggleLightDarkTester' onClick={themeToggler} id="checkbox" type="checkbox" />
+          <CheckBox onClick={themeToggler} id="checkbox" type="checkbox" />
           <CheckBoxLabel htmlFor="checkbox" />
         </CheckBoxWrapper>
+        </div>
       </nav>
     </div>
   );
