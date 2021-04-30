@@ -3,9 +3,11 @@
   <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
     <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="250" height="150">
   </a>
-
+  
+  <a href='https://elegant-benz-03a0d6.netlify.app/'>
   <h3 align="center">eGen gitJobs</h3>
-
+  </a>
+  
   <p align="center">
     Hello eGen Team member. Thank you for taking this time to view my application! This is my interview assignment for eGen Solution Full Stack Developer- NodeJS/VueJS/ReactJS position. This project took place over a one-week sprint.
     <br />
