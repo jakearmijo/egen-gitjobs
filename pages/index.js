@@ -1,13 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
 import { NavBar, JobTilesMain, SearchBar } from '../Components'
 import { Row } from '@zendeskgarden/react-grid';
 import { ensureArray } from '../lib/utils'
-import { lightTheme, darkTheme } from '../Components/Themes'
-
-
 
 export async function getStaticProps(){
   const res = await fetch("https://jobs.github.com/positions.json")
@@ -74,7 +70,6 @@ export default function Home({ allJobs }) {
       <Head>
         <title>eGen - gitJobs</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
       <NavBar themeToggler={themeToggler}/>

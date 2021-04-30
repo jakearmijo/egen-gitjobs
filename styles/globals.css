@@ -133,12 +133,34 @@ input:checked + .slider:before {
     float: none;
     display: block;
     text-align: left;
-    width: 100%;
+    width: auto;
     margin: 0;
     padding: 14px;
   }
   .topnav input[type=text] {
     border: 1px solid #ccc;  
+  }
+
+  .jobNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('/images/applybackground.png');
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+  }
+  
+  .jobNavBar > a > span > h3{
+    flex-direction: row;
+    color: white;
+    font-family: monospaced, sans-serif;
+    padding: 15px 15px;
+    margin: 25px 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
