@@ -4,7 +4,7 @@
     <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="250" height="150">
   </a>
   
-  <a href='https://elegant-benz-03a0d6.netlify.app/'>
+  <a href='https://elegant-benz-03a0d6.netlify.app/' target='_blank'>
   <h3 align="center">eGen gitJobs</h3>
   </a>
   
