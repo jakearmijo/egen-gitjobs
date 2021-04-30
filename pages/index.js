@@ -68,7 +68,7 @@ export default function Home({ allJobs }) {
   return (
     <div className={toggleDarkandLightMode()}>
       <Head>
-        <title>eGen - gitJobs</title>
+        <title>Egen - gitJobs</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
       </Head>
