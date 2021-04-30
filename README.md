@@ -1,12 +1,3 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
@@ -77,13 +68,12 @@ scheme in CSS, if you are new to it.
 8. Commit your code to a private GitHub repository and deploy the site using the
 netlify.com Starter (free) account.
 
-
 ### Built With
 
 * [Nextjs](https://nextjs.org/)
 * [NetLify](https://nextjs.org/)
 * [Styled-Component](https://styled-components.com/)
-* [MomentJs]()
+* [Cypress](wwww.cypress.io)
 
 
 
@@ -110,6 +100,19 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
+### Testing
+
+1. open a terminal windown
+   ```sh
+   npm run dev
+   ```
+2. open a second terminal windown
+   ```sh
+   npm run cypress:open
+   ```
+
+#### A Note on Testing
+I used a libray called Cypress.io. For the most part it was fun to learn and five into. I used it one time prior at work so I did have some familiarty with it. I never started or implemented it into a project from scratch. I followed the documentation to set it up. I would have and should have started tested earlier. I was a tad nervous so I started diving into cretion right away. In the future I would implement more testing including test for light and dark theme, pagination (if required), and improved testing of the search and filter functionality. Overall I enjoyed setting it up and I will work with [Cypress](https://docs.cypress.io/) in the future!
 
 
 <!-- USAGE EXAMPLES -->
