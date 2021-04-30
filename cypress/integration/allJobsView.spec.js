@@ -2,17 +2,12 @@
 var Chance = require('chance');
 var chance = new Chance();
 
-context('Actions', () => {
+context('Basic Website Funcationality', () => {
   beforeEach(() => {
-    describe('Visit egen - git jobs', () => {
-      it('successfully loads', () => {
         cy.visit('/')
-      })
-    })
   })
 
   it('Search Field Tests', () => {
-
     cy.get('.filter-search-company')
       .type('Frontend').should('have.value', 'Frontend')
 
@@ -66,8 +61,76 @@ context('Actions', () => {
     cy.get('.btnapplynow')
 
     cy.contains('Apply Now')
+      .should('be.visible')
+
+    cy.get('.goBackTester')
+      .click()
+
+    cy.get('.filter-search-company')
+      .type('Backend').should('have.value', 'Backend')
+
+    cy.get('#__next > div > main > div > label > div > div:nth-child(2) > label > div > div > h3')
+      .click()
+      .wait(2000)
+
+    cy.get('.titleLocApplyBottom')
+      .should('be.visible')
+
+    cy.get('.btnapplynow')
+
+    cy.contains('Apply Now')
+      .should('be.visible')
+
+    cy.get('.goBackTester')
+      .click()
+
+    cy.get('.filter-search-company')
+      .type('Eng').should('have.value', 'Eng')
+
+    cy.get('#__next > div > main > div > label > div > div:nth-child(4) > label > div > div > h3')
+      .click()
+      .wait(2000)
+
+    cy.get('.titleLocApplyBottom')
+      .should('be.visible')
+
+    cy.get('.btnapplynow')
+
+    cy.contains('Apply Now')
+      .should('be.visible')
+
+    cy.get('.goBackTester')
+      .click()
+
+      cy.get('.filter-search-company')
+      .type('soft').should('have.value', 'soft')
+
+    cy.get('#__next > div > main > div > label > div > div:nth-child(6) > label > div > div > h3')
+      .click()
+      .wait(2000)
+
+    cy.get('.titleLocApplyBottom')
+      .should('be.visible')
+
+    cy.get('.btnapplynow')
+
+    cy.contains('Apply Now')
+      .should('be.visible')
+
+    cy.get('.goBackTester')
       .click()
     
+  })
+
+  it.only('Should Toggle Light and Dark Mode', () => {
+    cy.wait(2000)
+
+    cy.get('.toggleLightDarkTester')
+      .should('be.visible')
+      .click()
+
+    //This is where i would add the testing for className and color changing
+
   })
 
 })
