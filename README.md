@@ -127,6 +127,10 @@ I used a library called [Cypress](https://docs.cypress.io/). For the most part, 
 
 The cypress tests by default run during the "postBuild" event. This occurs after Next.js has completed the build and before the deployment of the site. I implemented this utilizing netlify-plugin-cypress. This article came out in March of 2021 so it seems to be very new. For more information on [netlify-plugin-cypress](https://github.com/cypress-io/netlify-plugin-cypress#readme). More helpful information can be found on the [Cypress blog](https://www.cypress.io/blog/2020/03/30/run-cypress-tests-on-netlify-using-a-single-line/). 
 
+<a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/test-passing-from-netlify.png?raw=true'>
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/test-passing-from-netlify.png?raw=true" alt="single-job-view" width="400" height="400">
+</a>
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
