@@ -109,11 +109,11 @@ export const StyledTiledMain = ({ allJobs }) => (
           <JobTile name='job' value="Job">   
             <img src={company_logo} width={35} height={35} />
             <div>
-              <div>
-                <StyledHeader>{humanize} ago <span>&#183;</span> {type}</StyledHeader>
-                <StyledHeaderJobTitle>{title}</StyledHeaderJobTitle>
+              <div >
+                <StyledHeader className='jobTypeTester'>{humanize} ago <span>&#183;</span> {type}</StyledHeader>
+                <StyledHeaderJobTitle className='jobTitleTester'>{title}</StyledHeaderJobTitle>
                 <StyledHeader>{company}</StyledHeader>
-                <JobTileLabel>
+                <JobTileLabel className='jobLocationTester'>
                 {location}
                 </JobTileLabel>
               </div>

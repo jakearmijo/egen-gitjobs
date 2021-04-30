@@ -15,7 +15,7 @@ export const StyledButton = styled(Button)`
 const ButtonTemplate = ({ name }) => (
   <Row>
     <Col textAlign="center">
-      <StyledButton>{name}</StyledButton>
+      <StyledButton className='btnapplynow'>{name}</StyledButton>
     </Col>
   </Row>
 );
