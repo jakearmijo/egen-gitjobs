@@ -7,7 +7,6 @@ CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
 TERM = "xterm"
 
 [[plugins]]
-[[plugins]]
   package = "netlify-plugin-cypress"
   # let's run tests against the built site
   [plugins.inputs.postBuild]
