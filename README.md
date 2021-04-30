@@ -74,7 +74,7 @@ netlify.com Starter (free) account.
 * [Nextjs](https://nextjs.org/)
 * [NetLify](https://nextjs.org/)
 * [Styled-Component](https://styled-components.com/)
-* [Cypress](wwww.cypress.io)
+* [Cypress](https://cypress.io)
 
 <!-- GETTING STARTED -->
 ## Getting Started
