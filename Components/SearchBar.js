@@ -1,4 +1,9 @@
 import { ButtonTemplate } from '../Components'
+import styled from "styled-components";
+
+const LabelFullTime = styled.label`
+font-weight: bold;
+`;
 
 export default function SearchBar({ handleSearch, handleSearchLocation, handleSearchFullTime,}) {
   const search = 'Search'
@@ -22,9 +27,9 @@ export default function SearchBar({ handleSearch, handleSearchLocation, handleSe
       <div className="endnav">
         <div className="search-container">
           <input className='filter-search-full-time' type="checkbox" onChange={(event) => handleSearchFullTime(event)}/>
-        <label className="container">Full-Time Only
+        <LabelFullTime className="container">Full-Time Only
           <span className="checkmark"></span>
-        </label>
+        </LabelFullTime>
         </div>
       </div>
       <ButtonTemplate name={search}/>
