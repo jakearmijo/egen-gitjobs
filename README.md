@@ -14,7 +14,7 @@
     <a href="https://github.com/jakearmijo/egen-gitjobs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://elegant-benz-03a0d6.netlify.app/">View Demo</a>
+    <a target='_blank' href="https://elegant-benz-03a0d6.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/jakearmijo/egen-gitjobs/issues">Report Bug</a>
     ·
