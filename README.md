@@ -7,7 +7,7 @@
   <h3 align="center">eGen gitJobs</h3>
 
   <p align="center">
-    This is my interview assignment for eGen Solution Full Stack Developer- NodeJS/VueJS/ReactJS position. This project took place over a one-week sprint.
+    Hello eGen Team member. Thank you for taking this time to view my application! This is my interview assignment for eGen Solution Full Stack Developer- NodeJS/VueJS/ReactJS position. This project took place over a one-week sprint.
     <br />
     <a href="https://github.com/jakearmijo/egen-gitjobs"><strong>Explore the docs »</strong></a>
     <br />
