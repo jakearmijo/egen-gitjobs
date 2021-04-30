@@ -7,12 +7,12 @@ export default function SearchBar({ handleSearch, handleSearchLocation, handleSe
     <div className='searchBar'>
       <div className="topnav">
         <div className="search-container">
-          <form action="positions.json?">
+          <form action="filter">
             <input className='filter-search-company'type="text" placeholder="Filter by title, companies, expertise..." name="description" onChange={(event) => handleSearch(event)} />
           </form>
         </div>
       </div>
-      <div className="midnav">
+      <div className="topnav">
         <div className="search-container">
           <form action="filter">
             <input className='filter-search-location' type="text" placeholder="Filter by location..." name="locationsearch" onChange={(event) => handleSearchLocation(event)} />

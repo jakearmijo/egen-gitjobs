@@ -25,14 +25,11 @@ export default function Home({ allJobs }) {
 
   const [theme, setTheme] = useState('light');
   const themeToggler = () => {
-    console.log('plz excuse us as we implement changing themes')
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }
   const toggleDarkandLightMode = () => {
-    console.log("🚀 ~ file: index.js ~ line 27 ~ current theme is ->", theme)
     return theme === 'light' ? '.jobViewLight' : '.jobViewDark'
   }
-  console.log("🚀🚀🚀~ file: index.js ~ line 35 ~ toggleDarkandLightMode ~ This would switch the CSS class to:", toggleDarkandLightMode())
 
   const handleSearch = (event) => {
     event.preventDefault()
@@ -56,10 +53,13 @@ export default function Home({ allJobs }) {
   }
 
   const handleSearchFullTime = (event) => {
+    event.preventDefault()
     let value = event.target.checked;
     let result = []; 
     if(value === false){
-      result = allJobs
+      result = allJobs.filter((data) => {
+        return data;
+      })
     } else {
       result = allJobs.filter((data) => {
         return data.type === 'Full Time';

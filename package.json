@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "cypress:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:start": "cypress run --headed"
   },
   "dependencies": {
     "@zendeskgarden/css-variables": "^6.4.5",
