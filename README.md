@@ -53,10 +53,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/all-jobs-view-screenshot.png?raw=true'>
-    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/all-jobs-view-screenshot.png?raw=true" alt="all-jobs-view" width="550" height="500">
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/all-jobs-view-screenshot.png?raw=true" alt="all-jobs-view" width="500" height="400">
 </a>
 <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/single-page-view-screenshot.png?raw=true'>
-    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/single-page-view-screenshot.png?raw=true" alt="single-job-view" width="550" height="500">
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/single-page-view-screenshot.png?raw=true" alt="single-job-view" width="500" height="400">
 </a>
 
 Let’s say you are part of a team that is working on developing a Job Board for the us. The idea is to utilize GitHub Jobs API (https://jobs.github.com/api) for the data needs and develop a clean responsive user interface with features:
