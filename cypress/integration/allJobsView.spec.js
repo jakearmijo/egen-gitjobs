@@ -4,7 +4,11 @@ var chance = new Chance();
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    describe('Visit egen - git jobs', () => {
+      it('successfully loads', () => {
+        cy.visit('/')
+      })
+    })
   })
 
   it('Search Field Tests', () => {

@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href='https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true'>
-    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="200" height="100">
+    <img src="https://github.com/jakearmijo/egen-gitjobs/blob/main/public/images/logo.png?raw=true" alt="Jake Logo" width="250" height="150">
   </a>
 
   <h3 align="center">eGen gitJobs</h3>
@@ -12,7 +12,7 @@
     <a href="https://github.com/jakearmijo/egen-gitjobs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jakearmijo/egen-gitjobs">View Demo</a>
+    <a href="https://elegant-benz-03a0d6.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/jakearmijo/egen-gitjobs/issues">Report Bug</a>
     ·
@@ -108,11 +108,11 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. open a second terminal windown
    ```sh
-   npm run cypress:open
+   npm run cy:start
    ```
 
 #### A Note on Testing
-I used a libray called Cypress.io. For the most part it was fun to learn and five into. I used it one time prior at work so I did have some familiarty with it. I never started or implemented it into a project from scratch. I followed the documentation to set it up. I would have and should have started tested earlier. I was a tad nervous so I started diving into cretion right away. In the future I would implement more testing including test for light and dark theme, pagination (if required), and improved testing of the search and filter functionality. Overall I enjoyed setting it up and I will work with [Cypress](https://docs.cypress.io/) in the future!
+I used a library called [Cypress](https://docs.cypress.io/). For the most part, it was fun to learn and dive into. I used it one time prior at work so I did have some familiarity with it. I never started or implemented it into a project from scratch. I followed the documentation to set it up. I would have and should have started tested earlier. I was a tad nervous so I started diving into creation right away. In the future, I would implement more testing including tests for light and dark themes, pagination (if required), and improved testing of the search and filter functionality. Overall I enjoyed setting it up and I will work with [Cypress](https://docs.cypress.io/) in the future!
 
 
 <!-- USAGE EXAMPLES -->
@@ -125,12 +125,23 @@ _For more examples, please refer to the [GitHub Jobs](https://jobs.github.com/)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Roadmap / Things id work on and imporve
 
 See the [open issues](https://github.com/jakearmijo/egen-gitjobs/issues) for a list of proposed features (and known issues).
 
+After completing this I wanted to say thank you! I truly enjoyed diving into all this and creating something new from the requirements. I am missing a few things from the spec but I did research them and see how I might be able to implement them. I will touch on them here. 
+
+#### GeolocationAPI
+The first is the ability to default the location to the user’s current geocoordinates. I found a npm package called [react-geolocated](https://www.npmjs.com/package/react-geolocated). It seems to be "react-geolocated - React.js Higher-Order Component for using Geolocation API" Which when researching the geolocation subject. A intesting piece I foudn wa on Mozilla docs about the geolocation API. So this react comopnent might use that. For that i would try to find the Long and Lat then convert that to a city or state. Then I could render the correct jobs based upon where the individual was. In exmaple if they were in Berlin. The app would show Berlin job postings.  
+#### Toggle Dark mode
+I came close on this but I do think that it might be Nextjs that is messing with me. I have some logic that would toggle that className of the components to a light and dark mode. It does switch and I am console logging it out, but the color does not change. My thought is that since Nextjs renders everything to HTML at build time. When the build completes it is set to Light. Then I am toggling the button which switch the theme to Dark but nothing happens. Would Nextjs have to render 2 pages for every page a light and a dark page in order to complete this process? I am not sure.
+####  Mobile browsers
+Mobile browers are something I am VERY new to. That paired with vanilla CSS and I have 2 things I can definalty work on and can improve on. I will keep this in mind when I tackle my next side project. 
 
 
+These are just a few off the top of my head. I am sure there are a few other things as well! Anyway thank you again for this opportunity!!
+
+- - Jake Armijo
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -150,14 +161,12 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 Jake Armijo - [@jakemij](https://instagram.com/jakemij) - armijojake@yahoo.com
 
-Project Link: [https://github.com/jakearmijo/egen-gitjobs](https://github.com/jakearmijo/egen-gitjobs)
+Project Link: [Project Github](https://github.com/jakearmijo/egen-gitjobs)
 
 Portfolio Link:  [https://jakearmijo.com](https://jakearmijo.com) 
 

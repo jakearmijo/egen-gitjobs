@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { CursorPagination } from '@zendeskgarden/react-pagination';
 
 export default function Pagination({ allJobs }){
-  console.log("🚀 ~ file: Pagination.js ~ line 5 ~ Pagination ~ allJobs", allJobs)
   const [cursor, setCursor] = useState(0);
 
   const pages = allJobs;
